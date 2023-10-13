@@ -1,4 +1,5 @@
 {
+  "name": "minimal-starter-dev",
   "private": true,
   "type": "module",
   "scripts": {
