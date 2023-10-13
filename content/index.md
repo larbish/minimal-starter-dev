@@ -1,4 +1,9 @@
-# Nuxt Content
+---
+title: Home
+description: Studio x Content demo
+---
+
+## Studio x Content
 
 This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.
 
