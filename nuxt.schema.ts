@@ -40,7 +40,7 @@ export default defineNuxtSchema({
     footer: {
       /**
        * Hide or display the footer
-       * @studioIcon i-mdi-github
+       * @studioIcon i-mdi-page-layout-he
        */
       display: true
     }
