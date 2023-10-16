@@ -1,5 +1,6 @@
 export default defineAppConfig({
-  title: '',
+  title: 'TODO',
+  footer: true,
   socials: {
     github: '',
     twitter: ''

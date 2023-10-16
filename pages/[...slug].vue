@@ -19,7 +19,7 @@
           <ContentRenderer v-if="page.body" :value="page" />
         </UPageBody>
       </UPage>
-      <UFooter>
+      <UFooter v-if="footer">
         <template #right>
           <div class="flex items-center justify-center gap-4">
             <UButton
@@ -48,7 +48,7 @@
 </template>
 
 <script setup lang="ts">
-const { socials, title } = useAppConfig()
+const { title, footer, socials } = useAppConfig()
 const route = useRoute()
 
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
