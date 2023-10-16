@@ -61,7 +61,7 @@ jobs:
         run: ${{ steps.pkgman.outputs.package_manager }} install
 
       - name: Install @nuxthq/studio
-        run: ${{ steps.pkgman.outputs.package_manager }} add -D @nuxthq/studio@nuxthq/studio-edge@1.0.1-28290998.e84327f
+        run: ${{ steps.pkgman.outputs.package_manager }} add -D @nuxthq/studio@npm:@nuxthq/studio-edge@1.0.1-28290998.e84327f
 
       - name: Create .nuxtrc
         run: echo $'\nautoImport=true\nmodules[]=@nuxthq/studio' >> .nuxtrc
