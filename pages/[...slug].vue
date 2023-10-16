@@ -48,12 +48,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Link } from '#ui-pro/types'
-
 const { socials, title } = useAppConfig()
 const route = useRoute()
-
-console.log('socials :', socials)
 
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
 if (!page.value) {
