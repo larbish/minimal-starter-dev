@@ -4,7 +4,7 @@
       <UHeader>
         <template #logo>
           <span>
-            {{ title }}
+            {{ config.title }}
           </span>
         </template>
       </UHeader>
@@ -19,22 +19,22 @@
           <ContentRenderer v-if="page.body" :value="page" />
         </UPageBody>
       </UPage>
-      <UFooter v-if="footer">
+      <UFooter v-if="config.footer">
         <template #right>
           <div class="flex items-center justify-center gap-4">
             <UButton
-              v-if="socials.github"
+              v-if="config.socials.github"
               icon="i-mdi-github"
-              :to="`https://github.com/${socials.github}`"
+              :to="`https://github.com/${config.socials.github}`"
               color="gray"
               variant="ghost"
               target="_blank"
               :padded="false"
             />
             <UButton
-              v-if="socials.twitter"
+              v-if="config.socials.twitter"
               icon="i-mdi-twitter"
-              :to="`https://twitter.com/${socials.twitter}`"
+              :to="`https://twitter.com/${config.socials.twitter}`"
               color="gray"
               variant="ghost"
               target="_blank"
@@ -48,7 +48,7 @@
 </template>
 
 <script setup lang="ts">
-const { title, footer, socials } = useAppConfig()
+const config = useAppConfig()
 const route = useRoute()
 
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
