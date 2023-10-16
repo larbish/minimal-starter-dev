@@ -14,6 +14,7 @@
   </UCard>
 </template>
 
+<!-- Safelist: ring-blue-200 ring-blue-800 ring-green-200 ring-green-800 ring-red-200 ring-red-800 ring-yellow-200 ring-yellow-800 -->
 <script setup lang="ts">
 defineProps({
   color: {
@@ -22,5 +23,3 @@ defineProps({
   }
 })
 </script>
-
-<!-- Safelist: ring-blue-200 ring-blue-800 ring-green-200 ring-green-800 ring-red-200 ring-red-800 ring-yellow-200 ring-yellow-800 -->
