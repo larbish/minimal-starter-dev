@@ -29,7 +29,7 @@ export default defineNuxtSchema({
       /**
        * Header icon
        * @studioIcon i-mdi-image-filter-center-focus-strong-outline
-       * @formtype Icon
+       * @studioInput icon
        */
       icon: ''
     },
