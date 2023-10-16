@@ -3,7 +3,7 @@
     <UContainer>
       <UHeader>
         <template #logo>
-          <Icon v-if="header.icon" :name="header.icon" class="h-20 w-20" />
+          <Icon v-if="header.icon" :name="header.icon" class="h-10 w-10" />
           <span v-else>
             {{ header.title }}
           </span>

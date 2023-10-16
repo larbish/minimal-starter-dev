@@ -1,7 +1,7 @@
 export default defineAppConfig({
   header: {
     title: 'TODO',
-    icon: 'i-logos-nuxt'
+    icon: ''
   },
   footer: {
     display: true
