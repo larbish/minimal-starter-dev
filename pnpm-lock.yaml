@@ -14,7 +14,7 @@ devDependencies:
     specifier: ^0.2.1
     version: 0.2.1(vue@3.3.4)(webpack@5.88.2)
   '@nuxthq/studio':
-    specifier: ^1.0.1
+    specifier: ^1.0.0
     version: 1.0.1
   '@nuxtjs/eslint-config-typescript':
     specifier: ^12.1.0
