@@ -22,7 +22,7 @@ export default defineNuxtSchema({
      */
     header: {
       /**
-       * Header title to display of no icon set
+       * Header title to display when no icon is set
        * @studioIcon i-mdi-format-title
        */
       title: '',
