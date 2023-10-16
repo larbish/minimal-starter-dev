@@ -1,6 +1,6 @@
 export default defineAppConfig({
   header: {
-    title: 'TODO',
+    title: 'Demo',
     icon: ''
   },
   footer: {
