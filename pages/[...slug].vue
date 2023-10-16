@@ -3,9 +3,9 @@
     <UContainer>
       <UHeader>
         <template #logo>
-          <UIcon v-if="(header as any).icon" :name="((header as any).icon)" />
+          <Icon v-if="header.icon" :name="header.icon" class="h-20 w-20" />
           <span v-else>
-            {{ (header as any).title }}
+            {{ header.title }}
           </span>
         </template>
       </UHeader>
@@ -20,22 +20,22 @@
           <ContentRenderer v-if="page.body" :value="page" />
         </UPageBody>
       </UPage>
-      <UFooter v-if="(footer as any).display">
+      <UFooter v-if="footer.display">
         <template #right>
           <div class="flex items-center justify-center gap-4">
             <UButton
-              v-if="(socials as any).github"
+              v-if="socials.github"
               icon="i-mdi-github"
-              :to="`https://github.com/${(socials as any).github}`"
+              :to="`https://github.com/${socials.github}`"
               color="gray"
               variant="ghost"
               target="_blank"
               :padded="false"
             />
             <UButton
-              v-if="(socials as any).twitter"
+              v-if="socials.twitter"
               icon="i-mdi-twitter"
-              :to="`https://twitter.com/${(socials as any).twitter}`"
+              :to="`https://twitter.com/${socials.twitter}`"
               color="gray"
               variant="ghost"
               target="_blank"

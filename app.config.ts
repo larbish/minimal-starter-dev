@@ -1,7 +1,7 @@
 export default defineAppConfig({
   header: {
     title: 'TODO',
-    icon: 'i-mdi-format-title'
+    icon: 'i-logos-nuxt'
   },
   footer: {
     display: true
@@ -9,8 +9,5 @@ export default defineAppConfig({
   socials: {
     github: '',
     twitter: ''
-  },
-  ui: {
-    primary: 'indigo'
   }
 })
