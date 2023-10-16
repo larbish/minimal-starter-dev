@@ -5,5 +5,9 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxt/ui'],
   ui: {
     icons: ['mdi']
+  },
+  colorMode: {
+    preference: 'light',
+    storageKey: 'studio-color-mode'
   }
 })
