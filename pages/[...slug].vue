@@ -3,8 +3,9 @@
     <UContainer>
       <UHeader>
         <template #logo>
-          <span>
-            {{ config.title }}
+          <UIcon v-if="(header as any).icon" :name="((header as any).icon)" />
+          <span v-else>
+            {{ (header as any).title }}
           </span>
         </template>
       </UHeader>
@@ -19,22 +20,22 @@
           <ContentRenderer v-if="page.body" :value="page" />
         </UPageBody>
       </UPage>
-      <UFooter v-if="config.footer">
+      <UFooter v-if="(footer as any).display">
         <template #right>
           <div class="flex items-center justify-center gap-4">
             <UButton
-              v-if="config.socials.github"
+              v-if="(socials as any).github"
               icon="i-mdi-github"
-              :to="`https://github.com/${config.socials.github}`"
+              :to="`https://github.com/${(socials as any).github}`"
               color="gray"
               variant="ghost"
               target="_blank"
               :padded="false"
             />
             <UButton
-              v-if="config.socials.twitter"
+              v-if="(socials as any).twitter"
               icon="i-mdi-twitter"
-              :to="`https://twitter.com/${config.socials.twitter}`"
+              :to="`https://twitter.com/${(socials as any).twitter}`"
               color="gray"
               variant="ghost"
               target="_blank"
@@ -48,7 +49,7 @@
 </template>
 
 <script setup lang="ts">
-const config = useAppConfig()
+const { header, footer, socials } = useAppConfig()
 const route = useRoute()
 
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())

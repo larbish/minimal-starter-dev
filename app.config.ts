@@ -1,6 +1,11 @@
 export default defineAppConfig({
-  title: 'TODO',
-  footer: true,
+  header: {
+    title: 'TODO',
+    icon: 'i-mdi-format-title'
+  },
+  footer: {
+    display: true
+  },
   socials: {
     github: '',
     twitter: ''

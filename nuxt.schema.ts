@@ -1,29 +1,22 @@
-import { field } from '@nuxthq/studio/theme'
-
 export default defineNuxtSchema({
   appConfig: {
-    title: field({
-      type: 'string',
-      description: 'Website title, used as logo.',
-      icon: 'i-mdi-format-title',
-      default: 'My Theme'
-    }),
-    footer: field({
-      type: 'boolean',
-      description: 'Display footer.',
-      icon: 'i-mdi-page-layout-footer'
-    }),
+    /**
+     * Social links
+     * @studioIcon i-mdi-web
+     */
     socials: {
-      github: field({
-        type: 'string',
-        icon: 'i-mdi-github',
-        description: 'GitHub username.'
-      }),
-      twitter: field({
-        type: 'string',
-        icon: 'i-mdi-twitter',
-        description: 'Twitter username.'
-      })
+      /**
+       * Twitter social handle
+       * @example 'nuxt_js'
+       * @studioIcon i-mdi-github
+       */
+      twitter: '',
+      /**
+       * Twitter social handle
+       * @example 'nuxt_js'
+       * @studioIcon i-mdi-twitter
+       */
+      github: ''
     }
   }
 })
