@@ -7,16 +7,42 @@ export default defineNuxtSchema({
     socials: {
       /**
        * Twitter social handle
-       * @example 'nuxt_js'
        * @studioIcon i-mdi-github
        */
       twitter: '',
       /**
        * Twitter social handle
-       * @example 'nuxt_js'
        * @studioIcon i-mdi-twitter
        */
       github: ''
+    },
+    /**
+     * Header configuration
+     * @studioIcon i-mdi-page-layout-header
+     */
+    header: {
+      /**
+       * Header title to display of no icon set
+       * @studioIcon i-mdi-format-title
+       */
+      title: '',
+      /**
+       * Header icon
+       * @studioIcon i-mdi-image-filter-center-focus-strong-outline
+       * @formtype Icon
+       */
+      icon: ''
+    },
+    /**
+     * Footer configuration
+     * @studioIcon i-mdi-page-layout-header
+     */
+    footer: {
+      /**
+       * Hide or display the footer
+       * @studioIcon i-mdi-github
+       */
+      display: true
     }
   }
 })
